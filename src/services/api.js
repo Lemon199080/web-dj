@@ -1,4 +1,4 @@
-const API_BASE_URL = 'http://192.168.237.177:5000'; // Change this to your API URL
+const API_BASE_URL = 'https://api.zeds.rocks'; // Change this to your API URL
 
 export const fetchDoujins = async (page = 1) => {
   try {
