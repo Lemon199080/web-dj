@@ -1,0 +1,57 @@
+/* App.css - Additional styles beyond Tailwind */
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  
+  /* Manga reader specific styles */
+  .reader-container img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  /* Loading animation */
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+  .animate-spin {
+    animation: spin 1s linear infinite;
+  }
+  
+  /* Image hover effect */
+  .image-hover {
+    transition: transform 0.3s ease;
+  }
+  .image-hover:hover {
+    transform: scale(1.03);
+  }
+  
+  /* Fade animations */
+  .fade-in {
+    animation: fadeIn 0.3s ease-in;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
